@@ -3,7 +3,7 @@
     <div class="max-w-[1500px] w-full px-6 sm:px-6 lg:px-20 mx-auto">
       <header class="text-center mb-8">
         <h1
-          class="font-utm font-bold uppercase text-white tracking-[0.28px] pb-6 text-[36px] leading-[42px] md:text-[28px] md:leading-[34px] sm:text-[210px] sm:leading-[28px]"
+          class="font-utm font-bold uppercase text-white tracking-[0.28px] pb-6 text-[36px] leading-[42px] md:text-[28px] md:leading-[34px] sm:text-[210px] sm:leading-7"
         >
           SẢN PHẨM NỔI BẬT
         </h1>
