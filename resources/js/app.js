@@ -29,6 +29,8 @@ import {
   LoadingOutlined,
 } from "@ant-design/icons-vue";
 
+import { Menu as MenuIconLucide, Search } from "lucide-vue-next";
+
 createInertiaApp({
   resolve: (name) =>
     resolvePageComponent(
@@ -61,6 +63,8 @@ createInertiaApp({
     vueApp.component("KeyOutlined", KeyOutlined);
     vueApp.component("SafetyOutlined", SafetyOutlined);
     vueApp.component("LoadingOutlined", LoadingOutlined);
+    vueApp.component("MenuIcon", MenuIconLucide);
+    vueApp.component("SearchIcon", Search);
 
     vueApp.config.globalProperties.$message = message;
 

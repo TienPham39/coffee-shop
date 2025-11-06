@@ -1,64 +1,101 @@
 <template>
-  <footer class="bg-[#2A2A2A] text-gray-400 py-10">
-    <div
-      class="container mx-auto px-6 flex items-center flex-col md:flex-row justify-between gap-10"
-    >
-      <!-- Box 1: Logo + mạng xã hội -->
-      <div
-        class="flex flex-col items-center justify-center w-full md:w-1/3"
-      >
+  <footer class="bg-[#F6EED0] text-[#3A2A13] py-8 font-sans">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Cột 1: Logo + thông tin liên hệ -->
+      <div class="flex flex-col gap-4">
         <img
-          src="/images/homepage/footer_logo.png"
-          alt="footer logo"
+          src="/images/homepage/logo-coffee.png"
+          alt="Ông Quan Coffee"
+          class="w-30 h-30 object-contain"
         />
-        <!-- Icon mạng xã hội -->
-        <div class="flex items-center gap-4">
-          <img
-            src="/images/homepage/ytb.png"
-            alt="youtube"
-            class="cursor-pointer hover:opacity-80 transition"
-          />
-          <img
-            src="/images/homepage/fb.png"
-            alt="facebook"
-            class="cursor-pointer hover:opacity-80 transition"
-          />
-          <img
-            src="/images/homepage/zalo.png"
-            alt="zalo"
-            class="cursor-pointer hover:opacity-80 transition"
-          />
+        <div class="flex items-center">
+          <div>
+            <h3 class="font-holiday text-lg font-bold uppercase text-[#3A2A13] my-4">
+              Tiệm cà phê Ông Quan
+            </h3>
+            <p class="text-sm leading-relaxed text-[#3A2A13]/80">
+              Địa chỉ: hẻm 583, đường 30/4, phường Hưng Lợi, quận Ninh Kiều, TP.
+              Cần Thơ, Việt Nam <br />
+              Điện thoại: 093 729 65 65
+            </p>
+          </div>
+        </div>
+
+        <!-- Mạng xã hội -->
+        <div class="flex items-center gap-4 mt-2">
+          <a href="#" aria-label="Facebook">
+            <img
+              src="/images/homepage/fb.png"
+              alt="Facebook"
+              class="w-6 h-6 hover:opacity-80 transition"
+            />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img
+              src="/images/homepage/ig.png"
+              alt="Instagram"
+              class="w-6 h-6 hover:opacity-80 transition"
+            />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img
+              src="/images/homepage/ytb.png"
+              alt="YouTube"
+              class="w-6 h-6 hover:opacity-80 transition"
+            />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img
+              src="/images/homepage/twitter.png"
+              alt="Twitter"
+              class="w-6 h-6 hover:opacity-80 transition"
+            />
+          </a>
         </div>
       </div>
 
-      <!-- Box 2: Placeholder text -->
-      <div class="w-full md:w-1/3 flex flex-col gap-2">
-        <div class="h-3 bg-gray-500/40 w-3/4 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-5/6 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-4/5 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-2/3 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-3/5 rounded"></div>
+      <!-- Cột 2: Giới thiệu -->
+      <div class="md:pl-18 mt-4">
+        <h4 class="font-oswald text-xl text-[#3A2A13] font-bold uppercase mb-3">Giới thiệu</h4>
+        <ul class="space-y-2 text-sm text-[#3A2A13]/80">
+          <li><a href="#" class="hover:text-black">Về chúng tôi</a></li>
+          <li><a href="#" class="hover:text-black">Ưu đãi</a></li>
+        </ul>
       </div>
 
-      <!-- Box 3: Placeholder text -->
-      <div class="w-full md:w-1/3 flex flex-col gap-2">
-        <div class="h-3 bg-gray-500/40 w-5/6 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-4/5 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-2/3 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-3/5 rounded"></div>
-        <div class="h-3 bg-gray-500/40 w-4/6 rounded"></div>
+      <!-- Cột 3: Dịch vụ khách hàng -->
+      <div class="md:pl-18 mt-4">
+        <h4 class="font-oswald text-xl text-[#3A2A13] font-bold uppercase mb-3">
+          Dịch vụ khách hàng
+        </h4>
+        <ul class="space-y-2 text-sm text-[#3A2A13]/80">
+          <li><a href="#" class="hover:text-black">Liên hệ</a></li>
+          <li><a href="#" class="hover:text-black">Hỗ trợ khách hàng</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Điều khoản -->
+      <div class="md:pl-18 mt-4">
+        <h4 class="font-oswald text-xl text-[#3A2A13] font-bold uppercase mb-3">Điều khoản</h4>
+        <ul class="space-y-2 text-sm text-[#3A2A13]/80">
+          <li><a href="#" class="hover:text-black">Điều khoản sử dụng</a></li>
+          <li>
+            <a href="#" class="hover:text-black"
+              >Chính sách bảo mật thông tin</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup>
-import { ref } from "vue";
+// Không cần script phức tạp ở đây
 </script>
 
 <style scoped>
-/* Container mặc định nếu bạn chưa dùng Tailwind container plugin */
-.container {
-  max-width: 1200px;
+footer {
+  font-family: "Inter", sans-serif;
 }
 </style>
