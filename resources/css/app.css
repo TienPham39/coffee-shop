@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/utm-banque");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+@import url("https://fonts.cdnfonts.com/css/utm-banque");
+@import url("https://fonts.cdnfonts.com/css/svn-gotham");
+@plugin "daisyui";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme {
+  --font-display: "Inter", "sans-serif";
+  --color-primary: #4635b1;
+  --color-background: #141122;
+}
+@font-face {
+  font-family: "UTM Banque";
+  src: url("/fonts/UTMBanque.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+#app {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+
+:root {
+  --ant-font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+  --font-baloo: 'Baloo 2', cursive;
+
+  .font-banque {
+    font-family: "UTM Banque", sans-serif !important;
+  }
+
+  .font-gotham {
+    font-family: "SVN-Gotham", sans-serif !important;
+  }
+
+  .font-oswald {
+    font-family: "Oswald", sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .font-holiday {
+    font-family: "DM Serif Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .font-yeseva-one {
+    font-family: "Yeseva One", serif !important;
+  }
+
+  .font-playfair {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  .font-anton {
+    font-family: "Anton", sans-serif !important;
+    letter-spacing: 0.08em;
+  }
+
+  .font-smooch {
+    font-family: "Smooch Sans", sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .font-saira {
+    font-family: "Saira Condensed", sans-serif;
+  }
+
+  .font-raleway {
+    font-family: "Raleway", sans-serif !important;
+    letter-spacing: 0.5px;
+  }
+
+  .font-baloo {
+    font-family: var(--font-baloo) !important;
+  }
+}
