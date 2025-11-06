@@ -460,13 +460,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import Navbar from "../../../components/client/Navbar.vue";
-import Slider from "../../../components/client/Slider.vue";
-import Contact from "../../../components/client/Contact.vue";
 import Footer from "../../../components/client/Footer.vue";
-import HomepageVideos from "../../../components/client/homepage-videos.vue";
-import ProductHighlight from "../../../components/client/Product-highlight.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
